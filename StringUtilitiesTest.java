@@ -124,10 +124,13 @@ public class StringUtilitiesTest {
         // : Given
         String input = "Zipcoder";
         Character expected = 'c';
-
+          int len=input.length();
+        int c = len/2;
+        char ch[]=input.toCharArray();
+        
         // : When
         Character actual = StringUtilities.getMiddleCharacter(input);
-
+        
         // : Then
         Assert.assertEquals(expected.toString(), actual.toString());
     }
